@@ -126,8 +126,28 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'Vercel', 'Firebase', 'Google Datastudio', 'Coldfusion', 'Coldbox', 'PWA'];
-  const skills2 = ['System Administration', 'Server Administration', 'Virtual Machines', 'Networking', 'Backend Dev', 'Mobile Development', 'Data Analysis', 'Data Visualization',  'Remote Troubleshooting', 'Project Management'];
+  const skills = [
+    'JavaScript (ES6+)',
+    'React',
+    'Vercel',
+    'Firebase',
+    'Google Datastudio',
+    'Coldfusion',
+    'Coldbox',
+    'PWA',
+  ];
+  const skills2 = [
+    'System Administration',
+    'Server Administration',
+    'Virtual Machines',
+    'Networking',
+    'Backend Dev',
+    'Mobile Development',
+    'Data Analysis',
+    'Data Visualization',
+    'Remote Troubleshooting',
+    'Project Management',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,20 +157,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Gene and I enjoy playing video games, learning new things, and re watching history.
-              I am a undergraduate student of University Immaculate Conception with the course <a>Bachelor of Science in Information Technologies specialized in Healthcare Technologies.</a>
-              My interest in programming started back in 2012 when I saw a book about hacking in a store. Which led to me learning programming.
+              Hello! My name is Gene and I enjoy playing video games, learning new things, and re
+              watching history. I am a undergraduate student of University Immaculate Conception
+              with the course{' '}
+            </p>
+            <p>
+              <a href="?">BS in Information Technologies specialized in Healthcare Technologies.</a>
+            </p>
+            <p>
+              My interest in programming started back in 2012 when I saw a book about hacking in a
+              store. Which led to me learning programming.
             </p>
 
             <p>
-              I am also currently taking a bootcamp at {' '}
-              <a href="https://kodego.ph//">KodegoPH</a>,{' '}
-
+              I am also currently training in a bootcamp at{' '}
+              <a href="https://kodego.ph//">KodegoPH.</a>{' '}
             </p>
 
             <p>
-              I currently do small scale projects like building websites for clients, PC Software/Hardware troubleshooting via onsite or remotely and also do freelance work.
-
+              I currently do small scale projects like building websites for clients, PC
+              Software/Hardware troubleshooting via onsite or remotely and also do freelance work.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

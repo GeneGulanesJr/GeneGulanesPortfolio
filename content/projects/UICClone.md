@@ -1,7 +1,7 @@
 ---
 date: '2019-07-15'
-title: 'OctoProfile'
-github: 'https://github.com/bchiang7/octoprofile'
+title: 'UIC Website Clone'
+github: 'https://github.com/GeneGulanesJr/geneuicclone'
 external: 'https://octoprofile.now.sh'
 tech:
   - Next.js

@@ -64,14 +64,14 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a Software Developer specialized in Healthcare Technologies and building serverless applications.
-         Currently, I’m currently on building a payment solution
-        at{' '}
-        <a href="https://www.uic.edu.ph/" target="_blank" rel="noreferrer">
-          University of Immaculate Conception
-        </a> and I am currently taking a Bootcamp at {' '}
-        <a href="https://kodego.ph/" target="_blank" rel="noreferrer">
-          KodeGo.ph
+        I’m a Web Engineer specialized in Healthcare Technologies and building serverless
+        applications. Currently, I’m currently employed to{' '}
+        <a href="https://toaglobal.com" target="_blank" rel="noreferrer">
+          TOA GLOBAL
+        </a>{' '}
+        with the client{' '}
+        <a href="https://www.healthcarelogic.com/" target="_blank" rel="noreferrer">
+          Healthcare Logic
         </a>
         .
       </p>
@@ -82,7 +82,8 @@ const Hero = () => {
       className="email-link"
       href="https://www.youtube.com/channel/UCcrniHNob74OdxcUy8kfvOQ"
       target="_blank"
-      rel="noreferrer">
+      rel="noreferrer"
+    >
       Check out my YT channel!
     </a>
   );

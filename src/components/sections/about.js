@@ -170,8 +170,7 @@ const About = () => {
             </p>
 
             <p>
-              I am also currently training in a bootcamp at{' '}
-              <a href="https://kodego.ph//">KodegoPH.</a>{' '}
+              I have taken a bootcamp training at <a href="https://kodego.ph//">KodegoPH.</a>{' '}
             </p>
 
             <p>

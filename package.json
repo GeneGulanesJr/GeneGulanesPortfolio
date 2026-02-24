@@ -34,6 +34,7 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^2.1.4",
+    "core-js": "3",
     "gatsby": "^5.13.3",
     "gatsby-plugin-google-analytics": "^5.16.0",
     "gatsby-plugin-google-gtag": "^5.13.1",

@@ -4,7 +4,7 @@ const button = css`
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
-  border-radius: var(--border-radius);
+  border-radius: 0;
   font-size: var(--fz-xs);
   font-family: var(--font-mono);
   line-height: 1;
@@ -17,6 +17,8 @@ const button = css`
   &:focus,
   &:active {
     background-color: var(--green-tint);
+    box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+    text-shadow: var(--glow);
     outline: none;
   }
   &:after {
@@ -91,7 +93,7 @@ const mixins = {
     color: var(--green);
     background-color: transparent;
     border: 1px solid var(--green);
-    border-radius: var(--border-radius);
+    border-radius: 0;
     padding: 0.75rem 1rem;
     font-size: var(--fz-xs);
     font-family: var(--font-mono);
@@ -103,6 +105,8 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
+      box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+      text-shadow: var(--glow);
       outline: none;
     }
     &:after {
@@ -114,7 +118,7 @@ const mixins = {
     color: var(--green);
     background-color: transparent;
     border: 1px solid var(--green);
-    border-radius: var(--border-radius);
+    border-radius: 0;
     padding: 1.25rem 1.75rem;
     font-size: var(--fz-sm);
     font-family: var(--font-mono);
@@ -126,6 +130,8 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
+      box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+      text-shadow: var(--glow);
       outline: none;
     }
     &:after {

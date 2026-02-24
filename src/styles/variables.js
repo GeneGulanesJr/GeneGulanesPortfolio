@@ -2,23 +2,24 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #1c1c1c;
-    --navy: #383838;
-    --light-navy: #000000;
-    --lightest-navy: #545454;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
-    --dark-slate: #717171;
-    --slate: #8d8d8d;
-    --light-slate: #a9a9a9;
-    --lightest-slate: #e2e2e2;
-    --white: #e2e2e2;
-    --green: #ffffff;
-    --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
+    --dark-navy: #040608;
+    --navy: #080c10;
+    --light-navy: #0e1318;
+    --lightest-navy: #161e26;
+    --navy-shadow: rgba(0, 0, 0, 0.9);
+    --dark-slate: #2a3a4a;
+    --slate: #7a99b8;
+    --light-slate: #a8c4d8;
+    --lightest-slate: #d0e8f4;
+    --white: #eef6fc;
+    --green: #c8e8ff;
+    --green-tint: rgba(200, 232, 255, 0.07);
+    --pink: #f472b6;
     --blue: #57cbff;
 
-    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-      sans-serif;
+    --glow: 0 0 6px rgba(200, 232, 255, 0.6), 0 0 18px rgba(180, 220, 255, 0.3);
+
+    --font-sans: ui-monospace, 'SF Mono', 'Fira Code', 'Courier New', monospace;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
     --fz-xxs: 12px;

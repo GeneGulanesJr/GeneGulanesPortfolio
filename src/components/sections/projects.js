@@ -63,16 +63,22 @@ const StyledProject = styled.li`
   }
 
   .project-inner {
-    ${({ theme }) => theme.mixins.boxShadow};
     ${({ theme }) => theme.mixins.flexBetween};
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     height: 100%;
     padding: 2rem 1.75rem;
-    border-radius: var(--border-radius);
+    border-radius: 0;
     background-color: var(--light-navy);
+    border: 1px solid rgba(200, 232, 255, 0.2);
+    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.06), inset 0 0 20px rgba(200, 232, 255, 0.02);
     transition: var(--transition);
+
+    &:hover {
+      border-color: rgba(200, 232, 255, 0.45);
+      box-shadow: 0 0 16px rgba(200, 232, 255, 0.12), inset 0 0 20px rgba(200, 232, 255, 0.05);
+    }
   }
 
   .project-top {

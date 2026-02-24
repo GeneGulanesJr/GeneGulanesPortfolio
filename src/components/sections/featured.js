@@ -24,7 +24,8 @@ const StyledProject = styled.li`
   align-items: center;
 
   @media (max-width: 768px) {
-    ${({ theme }) => theme.mixins.boxShadow};
+    border: 1px solid rgba(200, 232, 255, 0.2);
+    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.06);
   }
 
   &:not(:last-of-type) {
@@ -152,18 +153,26 @@ const StyledProject = styled.li`
   }
 
   .project-description {
-    ${({ theme }) => theme.mixins.boxShadow};
     position: relative;
     z-index: 2;
     padding: 25px;
-    border-radius: var(--border-radius);
+    border-radius: 0;
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
+    border: 1px solid rgba(200, 232, 255, 0.25);
+    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.08), inset 0 0 20px rgba(200, 232, 255, 0.03);
+    transition: var(--transition);
+
+    &:hover {
+      border-color: rgba(200, 232, 255, 0.45);
+      box-shadow: 0 0 12px rgba(200, 232, 255, 0.12), inset 0 0 20px rgba(200, 232, 255, 0.05);
+    }
 
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;
+      border: none;
       box-shadow: none;
 
       &:hover {
@@ -241,23 +250,32 @@ const StyledProject = styled.li`
   }
 
   .project-image {
-    ${({ theme }) => theme.mixins.boxShadow};
     grid-column: 6 / -1;
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
+    border: 1px solid rgba(200, 232, 255, 0.2);
+    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.06);
+    transition: var(--transition);
+
+    &:hover {
+      border-color: rgba(200, 232, 255, 0.4);
+      box-shadow: 0 0 16px rgba(200, 232, 255, 0.1);
+    }
 
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
+      border: none;
+      box-shadow: none;
     }
 
     a {
       width: 100%;
       height: 100%;
       background-color: var(--green);
-      border-radius: var(--border-radius);
+      border-radius: 0;
       vertical-align: middle;
 
       &:hover,
@@ -315,6 +333,7 @@ const Featured = () => {
             frontmatter {
               title
               cover {
+                publicURL
                 childImageSharp {
                   gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
@@ -357,6 +376,7 @@ const Featured = () => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;
             const image = getImage(cover);
+            const isGif = cover && cover.publicURL && cover.publicURL.endsWith('.gif');
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -403,7 +423,11 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
+                    {isGif ? (
+                      <img src={cover.publicURL} alt={title} className="img" />
+                    ) : (
+                      image && <GatsbyImage image={image} alt={title} className="img" />
+                    )}
                   </a>
                 </div>
               </StyledProject>

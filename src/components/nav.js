@@ -17,12 +17,30 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(84, 84, 84, 1);
+  background-color: rgba(10, 10, 10, 0.92);
+  border-bottom: 1px solid rgba(200, 232, 255, 0.2);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
   backdrop-filter: blur(10px);
   transition: var(--transition);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 3px,
+      rgba(0, 0, 0, 0.08) 3px,
+      rgba(0, 0, 0, 0.08) 4px
+    );
+  }
 
   @media (max-width: 1080px) {
     padding: 0 40px;
@@ -38,8 +56,8 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(84, 84, 84, 1);
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+        background-color: rgba(10, 10, 10, 0.97);
+        box-shadow: 0 4px 20px rgba(200, 232, 255, 0.08);
       `};
 
     ${props =>
@@ -48,7 +66,7 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(calc(var(--nav-scroll-height) * -1));
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+        box-shadow: 0 4px 20px rgba(200, 232, 255, 0.08);
       `};
   }
 `;
@@ -73,7 +91,7 @@ const StyledNav = styled.nav`
       &:hover,
       &:focus {
         svg {
-          fill: var(--green-tint);
+          color: var(--green-tint);
         }
       }
 

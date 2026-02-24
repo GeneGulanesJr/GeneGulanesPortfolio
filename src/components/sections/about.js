@@ -127,25 +127,25 @@ const About = () => {
   }, []);
 
   const skills = [
-    'JavaScript (ES6+)',
-    'React',
-    'Vercel',
-    'Firebase',
-    'Google Datastudio',
-    'Coldfusion',
-    'Coldbox',
-    'PWA',
+    'Python',
+    'TypeScript',
+    'OpenAI / Retell AI',
+    'Whisper (ASR)',
+    'AWS (EC2, S3, Lambda)',
+    'MongoDB Atlas',
+    'Next.js / Node.js',
+    'Docker',
   ];
   const skills2 = [
-    'System Administration',
-    'Server Administration',
-    'Virtual Machines',
-    'Networking',
-    'Backend Dev',
-    'Mobile Development',
+    'AI Agent Development',
+    'LLM Integration',
+    'NLP & Speech Processing',
+    'RAG Pipelines',
+    'Prompt Engineering',
+    'Full Stack Development',
+    'Cloud Architecture (AWS)',
     'Data Analysis',
-    'Data Visualization',
-    'Remote Troubleshooting',
+    'System Administration',
     'Project Management',
   ];
 
@@ -157,25 +157,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Gene and I enjoy playing video games, learning new things, and re
-              watching history. I am a undergraduate student of University Immaculate Conception
-              with the course{' '}
+              Hello! My name is Gene a Full Stack Developer and AI Engineer. I studied{' '}
+              <a href="?">BS in Information Technology</a> at the University of the Immaculate
+              Conception, and got into programming after stumbling across a hacking book in 2012.
             </p>
             <p>
-              <a href="?">BS in Information Technologies specialized in Healthcare Technologies.</a>
-            </p>
-            <p>
-              My interest in programming started back in 2012 when I saw a book about hacking in a
-              store. Which led to me learning programming.
-            </p>
-
-            <p>
-              I have taken a bootcamp training at <a href="https://kodego.ph//">KodegoPH.</a>{' '}
-            </p>
-
-            <p>
-              I currently do small scale projects like building websites for clients, PC
-              Software/Hardware troubleshooting via onsite or remotely and also do freelance work.
+              I now focus on building AI agents, LLM pipelines, and cloud-based systems and
+              occasionally tinker with home servers and hardware for fun.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

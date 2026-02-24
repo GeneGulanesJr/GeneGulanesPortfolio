@@ -21,8 +21,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: var(--lightest-navy);
-    color: var(--lightest-slate);
+    background-color: var(--green);
+    color: var(--navy);
   }
 
   /* Provide basic, default focus styles.*/
@@ -53,18 +53,18 @@ const GlobalStyle = createGlobalStyle`
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--dark-slate) var(--navy);
+    scrollbar-color: var(--green) var(--dark-navy);
   }
   body::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
   }
   body::-webkit-scrollbar-track {
-    background: var(--navy);
+    background: var(--dark-navy);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-slate);
-    border: 3px solid var(--navy);
-    border-radius: 10px;
+    background-color: var(--green);
+    border: none;
+    border-radius: 0;
   }
 
   body {
@@ -439,6 +439,64 @@ const GlobalStyle = createGlobalStyle`
 
   .gatsby-image-outer-wrapper {
     height: 100%;
+  }
+
+  @keyframes flicker {
+    0%   { opacity: 1; }
+    92%  { opacity: 1; }
+    93%  { opacity: 0.97; }
+    94%  { opacity: 1; }
+    96%  { opacity: 0.98; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
+  @keyframes boot-line {
+    from {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  body {
+    animation: flicker 8s infinite;
+
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 3px,
+        rgba(0, 0, 0, 0.13) 3px,
+        rgba(0, 0, 0, 0.13) 4px
+      );
+    }
+  }
+
+  #logo,
+  .overline,
+  .subtitle,
+  .numbered-heading::before {
+    text-shadow: var(--glow);
+  }
+
+  .text-glow {
+    text-shadow: var(--glow);
   }
 
   ${TransitionStyles};

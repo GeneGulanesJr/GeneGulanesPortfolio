@@ -8,7 +8,7 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledJobsSection = styled.section`
-  max-width: 700px;
+  max-width: 900px;
 
   .inner {
     display: flex;
@@ -20,6 +20,9 @@ const StyledJobsSection = styled.section`
     // Prevent container from jumping
     @media (min-width: 700px) {
       min-height: 340px;
+    }
+    @media (min-width: 900px) {
+      min-height: 380px;
     }
   }
 `;
@@ -96,6 +99,8 @@ const StyledTabButton = styled.button`
   &:hover,
   &:focus {
     background-color: var(--light-navy);
+    color: var(--green);
+    text-shadow: var(--glow);
   }
 `;
 
@@ -139,7 +144,11 @@ const StyledTabPanels = styled.div`
 const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px 5px;
+  padding: 20px 25px;
+  border: 1px solid rgba(200, 232, 255, 0.2);
+  box-shadow: inset 0 0 20px rgba(200, 232, 255, 0.02);
+  background-color: var(--light-navy);
+  transition: var(--transition);
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};

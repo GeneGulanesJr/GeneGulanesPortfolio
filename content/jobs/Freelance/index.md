@@ -7,4 +7,6 @@ range: '2018 to Current'
 url: 'none'
 ---
 
-- Developed and shipped highly interactive web applications for freelance clients.
+- Build and deliver websites for small-scale clients.
+- Provide PC software and hardware troubleshooting via onsite and remote support.
+- Handle general freelance work across web development and tech support.

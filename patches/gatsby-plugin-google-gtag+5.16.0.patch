@@ -1,0 +1,15 @@
+diff --git a/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js b/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js
+index 086910f..3211994 100644
+--- a/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js
++++ b/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js
+@@ -24,8 +24,8 @@ exports.onRenderBody = function (_ref, pluginOptions) {
+ 
+   // Prevent duplicate or excluded pageview events being emitted on initial load of page by the `config` command
+   // https://developers.google.com/analytics/devguides/collection/gtagjs/#disable_pageview_tracking
+-
+-  gtagConfig.send_page_view = false;
++  // Patched: always send initial page_view (plugin default was false)
++  gtagConfig.send_page_view = true;
+   var firstTrackingId = pluginOptions.trackingIds && pluginOptions.trackingIds.length ? pluginOptions.trackingIds[0] : "";
+   var excludeGtagPaths = [];
+   if (typeof pluginConfig.exclude !== "undefined") {

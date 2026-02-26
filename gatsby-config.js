@@ -156,9 +156,11 @@ module.exports = {
         trackingIds: [
           'G-P4PMB3M139', // Google Analytics / GA4
         ],
+        gtagConfig: {
+          send_page_view: true,
+        },
         pluginConfig: {
           head: true,
-          // Set to true to respect Do Not Track browser setting
           respectDNT: false,
         },
       },

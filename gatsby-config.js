@@ -149,25 +149,17 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-P4PMB3M139',
-      },
-    },
+    // Google Analytics (GA4) – enabled; runs in production (gatsby build && gatsby serve)
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          'G-P4PMB3M139', // Google Analytics / GA
+          'G-P4PMB3M139', // Google Analytics / GA4
         ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
-        // This object is used for configuration specific to this plugin
         pluginConfig: {
-          // Puts tracking script in the head instead of the body
           head: true,
+          // Set to true to respect Do Not Track browser setting
+          respectDNT: false,
         },
       },
     },

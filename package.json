@@ -21,7 +21,8 @@
     "clean": "gatsby clean",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "deploy": "gatsby build"
+    "deploy": "yarn run build && wrangler deploy",
+    "preview": "yarn run build && wrangler dev"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -77,7 +78,8 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "patch-package": "^8.0.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "wrangler": "^4.68.1"
   },
   "packageManager": "yarn@4.12.0"
 }

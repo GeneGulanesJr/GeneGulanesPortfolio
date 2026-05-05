@@ -77,12 +77,13 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Gene E. Gulanes Jr</h2>;
-  const three = <h3 className="big-heading">I build intelligent systems.</h3>;
+  const three = <h3 className="big-heading">I build agentic AI tooling.</h3>;
   const four = (
     <>
       <p>
-        I&apos;m a Full Stack Developer and AI Engineer focused on building conversational AI
-        agents, LLM powered pipelines, and cloud based systems. Currently working at{' '}
+        I&apos;m a Full Stack Developer and AI Engineer focused on building extensions for
+        the Pi coding agent framework — persistent memory layers, browser automation, and
+        code intelligence systems. Currently working at{' '}
         <a href="https://curacall.com" target="_blank" rel="noreferrer">
           Curacall
         </a>{' '}

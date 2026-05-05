@@ -127,26 +127,25 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Python',
     'TypeScript',
-    'OpenAI / Retell AI',
-    'Whisper (ASR)',
-    'AWS (EC2, S3, Lambda)',
-    'MongoDB Atlas',
-    'Next.js / Node.js',
+    'Node.js',
+    'Python',
+    'Next.js / React',
+    'SQLite / PostgreSQL',
+    'Tailwind CSS',
     'Docker',
+    'AWS (EC2, S3, Lambda)',
   ];
   const skills2 = [
     'AI Agent Development',
     'LLM Integration',
-    'NLP & Speech Processing',
-    'RAG Pipelines',
-    'Prompt Engineering',
+    'Pi Extension Framework',
+    'Tree-sitter AST Analysis',
+    'Browser Automation',
+    'RAG & Memory Systems',
     'Full Stack Development',
-    'Cloud Architecture (AWS)',
-    'Data Analysis',
-    'System Administration',
-    'Project Management',
+    'Cloud Architecture',
+    'Linux System Administration',
   ];
 
   return (
@@ -157,13 +156,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Gene a Full Stack Developer and AI Engineer. I studied{' '}
+              Hello! My name is Gene — a Full Stack Developer and AI Engineer based in Davao City,
+              Philippines. I studied{' '}
               <a href="?">BS in Information Technology</a> at the University of the Immaculate
               Conception, and got into programming after stumbling across a hacking book in 2012.
             </p>
             <p>
-              I now focus on building AI agents, LLM pipelines, and cloud-based systems and
-              occasionally tinker with home servers and hardware for fun.
+              These days I build agentic AI tooling — persistent memory layers, browser automation,
+              and code intelligence systems for the{' '}
+              <a href="https://github.com/mariozechner/pi-coding-agent" target="blank" rel="noreferrer">
+                Pi coding agent
+              </a>{' '}
+              framework. My open-source extensions ({' '}
+              <a href="https://github.com/GeneGulanesJr/PiMemoryExtension" target="blank" rel="noreferrer">
+                PiMemoryExtension
+              </a>
+              ,{' '}
+              <a href="https://github.com/GeneGulanesJr/PiArgus" target="blank" rel="noreferrer">
+                PiArgus
+              </a>
+              ,{' '}
+              <a href="https://github.com/GeneGulanesJr/Aelvyril" target="blank" rel="noreferrer">
+                Aelvyril
+              </a>
+              ) ship zero-cloud-dependency tools for production workflows.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

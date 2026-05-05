@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gene Gulanes Jr',
     description:
-      'Gene Gulanes Jr is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Gene Gulanes Jr is a software engineer who builds agentic AI tooling, persistent memory layers, and browser automation systems for the Pi coding agent framework.',
     siteUrl: 'https://genegulanesjr.com/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@mpgh5574',

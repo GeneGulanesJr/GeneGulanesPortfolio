@@ -1,0 +1,12 @@
+name = "gene-gulanes-portfolio"
+
+# Cloudflare Pages configuration
+# Build: handled via Cloudflare dashboard (not wrangler deploy)
+# Connect repo → Build command: yarn build → Output dir: public
+
+[site]
+bucket = "./public"
+
+[build]
+command = "yarn build"
+publish = "public"

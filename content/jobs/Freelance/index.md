@@ -1,12 +1,12 @@
 ---
-date: '2018-01-1'
-title: 'Freelance'
+date: '2018-01-01'
+title: 'Side Freelance'
 company: 'Freelance'
-location: 'Philippines, Davao'
-range: '2018 to Current'
+location: 'Philippines'
+range: '2018 - Present (side)'
 url: 'none'
 ---
 
-- Build and deliver websites for small-scale clients.
-- Provide PC software and hardware troubleshooting via onsite and remote support.
-- Handle general freelance work across web development and tech support.
+- Take on select freelance and contract engagements alongside my primary role.
+- Scope varies by engagement — web development, automation, AI tooling, and tech consulting.
+- Client deliverables are kept confidential and are not reflected in this portfolio.

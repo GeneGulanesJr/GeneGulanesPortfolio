@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql, GatsbyImage, getImage } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';

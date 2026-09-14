@@ -1,7 +1,7 @@
 ---
 date: '2026-02-01'
 title: 'Project Kairos'
-cover: './cover.svg'
+cover: './cover.jpeg'
 github: ''
 external: 'https://projectkairos.genegulanesjr.com/'
 tech:

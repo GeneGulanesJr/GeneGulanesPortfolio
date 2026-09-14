@@ -1,7 +1,7 @@
 ---
 date: '2026-09-01'
 title: 'Insight Super App'
-cover: './cover.svg'
+cover: './cover.jpeg'
 github: ''
 external: 'https://insight-frontend.gulanesgene.workers.dev/'
 tech:

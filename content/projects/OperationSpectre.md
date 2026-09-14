@@ -1,13 +1,13 @@
 ---
-date: '2025-01-01'
+date: '2026-05-09'
 title: 'OperationSpectre'
 github: 'https://github.com/GeneGulanesJr/OperationSpectre'
-external: ''
+external: 'https://github.com/GeneGulanesJr/OperationSpectre'
 tech:
   - Python
+  - Shell
   - Docker
-  - Nmap
-  - Nuclei
+  - 60+ security tools
 ---
 
-CLI toolbox for sandboxed security & dev tool execution — 50+ tools in a Docker sandbox.
+A CLI toolbox for sandboxed security and dev-tool execution — 60+ tools (nmap, sqlmap, ffuf, nuclei, hashcat, hydra...) pre-installed in a Docker sandbox with orchestration playbooks and Pi skill integration. Not an agent, just tools.

@@ -1,13 +1,14 @@
 ---
-date: '2025-01-01'
+date: '2026-06-06'
 title: 'PiArgus'
 github: 'https://github.com/GeneGulanesJr/PiArgus'
-external: ''
+external: 'https://github.com/GeneGulanesJr/PiArgus'
 tech:
   - TypeScript
   - SearXNG
   - Obscura
+  - smolvm
   - Chromium
 ---
 
-Two-tier browser automation for Pi — Obscura for fast fetches, smolvm+Chromium for full interaction.
+A two-tier browser automation extension for Pi — light tier (Obscura/V8, ~30MB) for fast fetches and scraping, heavy tier (smolvm+Chromium) for screenshots, clicks, form fills, and GPU rendering. Auto-classifies requests via a tier router. Named after Argus Panoptes.

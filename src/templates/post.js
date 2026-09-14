@@ -6,9 +6,8 @@ const kebabCase = str =>
     .replace(/\s+/g, '-')
     .replace(/[^\w-]/g, '');
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Layout } from '@components';
+import { Layout, Seo } from '@components';
 
 const StyledPostContainer = styled.main`
   max-width: 1000px;
@@ -60,8 +59,6 @@ const PostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title={title} />
-
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
@@ -96,6 +93,10 @@ const PostTemplate = ({ data, location }) => {
 };
 
 export default PostTemplate;
+
+export const Head = ({ data, location }) => (
+  <Seo title={data.markdownRemark.frontmatter.title} location={location} />
+);
 
 PostTemplate.propTypes = {
   data: PropTypes.object,

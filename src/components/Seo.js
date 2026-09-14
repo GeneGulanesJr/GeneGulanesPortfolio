@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // https://www.gatsbyjs.com/docs/add-seo-component/
+// Migrated from react-helmet to Gatsby Head API. Each page now
+// exports a Head function that calls <Seo ... /> — no runtime
+// react-helmet dep required.
 
-const Head = ({ title, description, image }) => {
-  const { pathname } = useLocation();
-
+const Seo = ({ title, description, image, location }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -37,12 +36,17 @@ const Head = ({ title, description, image }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    url: `${siteUrl}${location && location.pathname ? location.pathname : ''}`,
   };
 
+  // Mirror react-helmet's titleTemplate behavior: apply the template only
+  // when a page-specific title was provided.
+  const fullTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
+
   return (
-    <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
+    <>
       <html lang="en" />
+      <title>{fullTitle}</title>
 
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -60,20 +64,22 @@ const Head = ({ title, description, image }) => {
       <meta name="twitter:image" content={seo.image} />
 
       <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
-    </Helmet>
+    </>
   );
 };
 
-export default Head;
+export default Seo;
 
-Head.propTypes = {
+Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
+  location: PropTypes.object,
 };
 
-Head.defaultProps = {
+Seo.defaultProps = {
   title: null,
   description: null,
   image: null,
+  location: null,
 };

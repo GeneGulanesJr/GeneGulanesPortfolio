@@ -6,9 +6,8 @@ const kebabCase = str =>
     .replace(/\s+/g, '-')
     .replace(/[^\w-]/g, '');
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Layout } from '@components';
+import { Layout, Seo } from '@components';
 import { IconBookmark } from '@components/icons';
 
 const StyledMainContainer = styled.main`
@@ -151,8 +150,6 @@ const PensievePage = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Pensieve" />
-
       <StyledMainContainer>
         <header>
           <h1 className="big-heading">Pensieve</h1>
@@ -211,6 +208,8 @@ PensievePage.propTypes = {
 };
 
 export default PensievePage;
+
+export const Head = ({ location }) => <Seo title="Pensieve" location={location} />;
 
 export const pageQuery = graphql`
   {

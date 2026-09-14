@@ -6,9 +6,8 @@ const kebabCase = str =>
     .replace(/\s+/g, '-')
     .replace(/[^\w-]/g, '');
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Layout } from '@components';
+import { Layout, Seo } from '@components';
 
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
@@ -42,8 +41,6 @@ const TagsPage = ({
   location,
 }) => (
   <Layout location={location}>
-    <Helmet title="Tags" />
-
     <StyledTagsContainer>
       <span className="breadcrumb">
         <span className="arrow">&larr;</span>
@@ -84,6 +81,8 @@ TagsPage.propTypes = {
 };
 
 export default TagsPage;
+
+export const Head = ({ location }) => <Seo title="Tags" location={location} />;
 
 export const pageQuery = graphql`
   query {

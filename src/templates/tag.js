@@ -6,9 +6,8 @@ const kebabCase = str =>
     .replace(/\s+/g, '-')
     .replace(/[^\w-]/g, '');
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Layout } from '@components';
+import { Layout, Seo } from '@components';
 
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
@@ -55,8 +54,6 @@ const TagTemplate = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title={`Tagged: #${tag}`} />
-
       <StyledTagsContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
@@ -105,6 +102,10 @@ const TagTemplate = ({ pageContext, data, location }) => {
 };
 
 export default TagTemplate;
+
+export const Head = ({ pageContext, location }) => (
+  <Seo title={`Tagged: #${pageContext.tag}`} location={location} />
+);
 
 TagTemplate.propTypes = {
   pageContext: PropTypes.shape({

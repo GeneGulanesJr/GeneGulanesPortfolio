@@ -17,7 +17,9 @@ const button = css`
   &:focus,
   &:active {
     background-color: var(--green-tint);
-    box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+    box-shadow:
+      inset 0 0 0 1px var(--green),
+      var(--glow);
     text-shadow: var(--glow);
     outline: none;
   }
@@ -105,7 +107,9 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
-      box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+      box-shadow:
+        inset 0 0 0 1px var(--green),
+        var(--glow);
       text-shadow: var(--glow);
       outline: none;
     }
@@ -130,7 +134,9 @@ const mixins = {
     &:focus,
     &:active {
       background-color: var(--green-tint);
-      box-shadow: inset 0 0 0 1px var(--green), var(--glow);
+      box-shadow:
+        inset 0 0 0 1px var(--green),
+        var(--glow);
       text-shadow: var(--glow);
       outline: none;
     }

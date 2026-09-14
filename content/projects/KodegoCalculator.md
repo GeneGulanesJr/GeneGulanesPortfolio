@@ -11,4 +11,5 @@ tech:
 company: 'Kodego'
 showInProjects: true
 ---
+
 A blocky simple mini e-calculator

@@ -161,12 +161,16 @@ const StyledProject = styled.li`
     color: var(--light-slate);
     font-size: var(--fz-lg);
     border: 1px solid rgba(200, 232, 255, 0.25);
-    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.08), inset 0 0 20px rgba(200, 232, 255, 0.03);
+    box-shadow:
+      0 0 0 1px rgba(200, 232, 255, 0.08),
+      inset 0 0 20px rgba(200, 232, 255, 0.03);
     transition: var(--transition);
 
     &:hover {
       border-color: rgba(200, 232, 255, 0.45);
-      box-shadow: 0 0 12px rgba(200, 232, 255, 0.12), inset 0 0 20px rgba(200, 232, 255, 0.05);
+      box-shadow:
+        0 0 12px rgba(200, 232, 255, 0.12),
+        inset 0 0 20px rgba(200, 232, 255, 0.05);
     }
 
     @media (max-width: 768px) {

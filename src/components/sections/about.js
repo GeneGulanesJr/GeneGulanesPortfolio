@@ -157,18 +157,24 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Gene — a Full Stack Developer and AI Engineer based in Davao City,
-              Philippines. I studied{' '}
-              <a href="?">BS in Information Technology</a> at the University of the Immaculate
-              Conception, and got into programming after stumbling across a hacking book in 2012.
+              Philippines. I studied <a href="?">BS in Information Technology</a> at the University
+              of the Immaculate Conception, and got into programming after stumbling across a
+              hacking book in 2012.
             </p>
             <p>
               These days I build agentic AI tooling — persistent memory layers, browser automation,
               and code intelligence systems for the{' '}
-              <a href="https://github.com/mariozechner/pi-coding-agent" target="blank" rel="noreferrer">
+              <a
+                href="https://github.com/mariozechner/pi-coding-agent"
+                target="blank"
+                rel="noreferrer">
                 Pi coding agent
               </a>{' '}
               framework. My open-source extensions ({' '}
-              <a href="https://github.com/GeneGulanesJr/PiMemoryExtension" target="blank" rel="noreferrer">
+              <a
+                href="https://github.com/GeneGulanesJr/PiMemoryExtension"
+                target="blank"
+                rel="noreferrer">
                 PiMemoryExtension
               </a>
               ,{' '}

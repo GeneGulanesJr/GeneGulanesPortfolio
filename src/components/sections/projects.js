@@ -73,12 +73,16 @@ const StyledProject = styled.li`
     border-radius: 0;
     background-color: var(--light-navy);
     border: 1px solid rgba(200, 232, 255, 0.2);
-    box-shadow: 0 0 0 1px rgba(200, 232, 255, 0.06), inset 0 0 20px rgba(200, 232, 255, 0.02);
+    box-shadow:
+      0 0 0 1px rgba(200, 232, 255, 0.06),
+      inset 0 0 20px rgba(200, 232, 255, 0.02);
     transition: var(--transition);
 
     &:hover {
       border-color: rgba(200, 232, 255, 0.45);
-      box-shadow: 0 0 16px rgba(200, 232, 255, 0.12), inset 0 0 20px rgba(200, 232, 255, 0.05);
+      box-shadow:
+        0 0 16px rgba(200, 232, 255, 0.12),
+        inset 0 0 20px rgba(200, 232, 255, 0.05);
     }
   }
 

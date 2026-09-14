@@ -81,9 +81,9 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I&apos;m a Full Stack Developer and AI Engineer focused on building extensions for
-        the Pi coding agent framework — persistent memory layers, browser automation, and
-        code intelligence systems. Currently working at{' '}
+        I&apos;m a Full Stack Developer and AI Engineer focused on building extensions for the Pi
+        coding agent framework — persistent memory layers, browser automation, and code intelligence
+        systems. Currently working at{' '}
         <a href="https://curacall.com" target="_blank" rel="noreferrer">
           Curacall
         </a>{' '}

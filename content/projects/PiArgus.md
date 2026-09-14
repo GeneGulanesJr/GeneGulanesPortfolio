@@ -1,6 +1,7 @@
 ---
 date: '2026-06-06'
 title: 'PiArgus'
+cover: './PiArgus/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/PiArgus'
 external: 'https://github.com/GeneGulanesJr/PiArgus'
 tech:

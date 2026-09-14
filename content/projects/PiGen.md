@@ -1,6 +1,7 @@
 ---
 date: '2026-06-15'
 title: 'PiGen'
+cover: './PiGen/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/PiGen'
 external: 'https://github.com/GeneGulanesJr/PiGen'
 tech:

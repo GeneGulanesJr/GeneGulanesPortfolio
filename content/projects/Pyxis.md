@@ -1,6 +1,7 @@
 ---
 date: '2026-05-11'
 title: 'Pyxis'
+cover: './Pyxis/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/Pyxis'
 external: 'https://github.com/GeneGulanesJr/Pyxis'
 tech:

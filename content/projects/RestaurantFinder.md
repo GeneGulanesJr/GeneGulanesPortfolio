@@ -1,6 +1,7 @@
 ---
 date: '2026-03-14'
 title: 'RestaurantFinder'
+cover: './RestaurantFinder/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/RestaurantFinder'
 external: 'https://github.com/GeneGulanesJr/RestaurantFinder'
 tech:

@@ -1,6 +1,7 @@
 ---
 date: '2026-05-09'
 title: 'OperationSpectre'
+cover: './OperationSpectre/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/OperationSpectre'
 external: 'https://github.com/GeneGulanesJr/OperationSpectre'
 tech:

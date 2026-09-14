@@ -1,6 +1,7 @@
 ---
 date: '2026-07-10'
 title: 'Aurex'
+cover: './Aurex/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/Aurex'
 external: 'https://github.com/GeneGulanesJr/Aurex'
 tech:

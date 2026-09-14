@@ -1,6 +1,7 @@
 ---
 date: '2021-09-01'
 title: 'UIC Payment System'
+cover: './UICPaymentSystem/cover.jpeg'
 external: 'http://apps.uic.edu.ph/'
 cta: 'http://apps.uic.edu.ph/'
 tech:

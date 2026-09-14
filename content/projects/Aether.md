@@ -1,6 +1,7 @@
 ---
 date: '2026-05-04'
 title: 'Aether'
+cover: './Aether/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/Aether'
 external: 'https://github.com/GeneGulanesJr/Aether'
 tech:

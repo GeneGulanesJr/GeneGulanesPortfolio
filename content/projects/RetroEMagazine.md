@@ -1,6 +1,7 @@
 ---
 date: '2020-01-10'
 title: 'Retro E Magazine'
+cover: './RetroEMagazine/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/KodeGoMiniProject1'
 external: 'https://genegulanesjr.github.io/KodeGoMiniProject1/'
 tech:

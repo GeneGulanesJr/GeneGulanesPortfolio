@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, GatsbyImage, getImage } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -87,9 +87,25 @@ const StyledProject = styled.li`
 
     .folder {
       color: var(--green);
+      display: flex;
+      align-items: center;
+      width: 72px;
+      height: 40px;
+      overflow: hidden;
+
       svg {
         width: 40px;
         height: 40px;
+      }
+
+      .gatsby-image-wrapper {
+        width: 72px;
+        height: 40px;
+
+        img {
+          object-fit: cover;
+          filter: grayscale(15%) contrast(1.05);
+        }
       }
     }
 
@@ -187,6 +203,17 @@ const Projects = () => {
               tech
               github
               external
+              cover {
+                publicURL
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 72
+                    height: 40
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
             html
           }
@@ -218,14 +245,19 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, title, tech, cover } = frontmatter;
+    const coverImage = cover && getImage(cover);
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
             <div className="folder">
-              <Icon name="Folder" />
+              {coverImage ? (
+                <GatsbyImage image={coverImage} alt={`${title} cover`} />
+              ) : (
+                <Icon name="Folder" />
+              )}
             </div>
             <div className="project-links">
               {github && (

@@ -1,6 +1,7 @@
 ---
 date: '2021-06-01'
 title: 'SpaceDino'
+cover: './SpaceDino/cover.jpeg'
 external: 'https://drive.google.com/drive/u/0/folders/1no48K8pyA6oSPbuI2J2D5AfXDKmJpvSR'
 tech:
   - Unity

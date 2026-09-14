@@ -1,6 +1,7 @@
 ---
 date: '2019-07-15'
 title: 'UIC Website Clone'
+cover: './UICClone/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/geneuicclone'
 
 tech:

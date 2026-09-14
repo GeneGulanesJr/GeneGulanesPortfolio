@@ -1,6 +1,7 @@
 ---
 date: '2026-09-07'
 title: 'LaPis'
+cover: './LaPis/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/LaPis'
 external: 'https://github.com/GeneGulanesJr/LaPis'
 tech:

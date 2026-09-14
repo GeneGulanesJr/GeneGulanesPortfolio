@@ -1,6 +1,7 @@
 ---
 date: '2019-11-12'
 title: 'DCTRCDD MERN Stack'
+cover: './DCTRCDD/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/DCTRCDD'
 tech:
   - MongoDB

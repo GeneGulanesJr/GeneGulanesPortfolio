@@ -1,6 +1,7 @@
 ---
 date: '2026-08-31'
 title: 'Aelvyril'
+cover: './Aelvyril/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/Aelvyril'
 external: 'https://github.com/GeneGulanesJr/Aelvyril'
 tech:

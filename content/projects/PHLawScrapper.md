@@ -1,6 +1,7 @@
 ---
 date: '2026-03-30'
 title: 'PHLawScrapper'
+cover: './PHLawScrapper/cover.jpeg'
 github: 'https://github.com/GeneGulanesJr/PHLawScrapper'
 external: 'https://github.com/GeneGulanesJr/PHLawScrapper'
 tech:
